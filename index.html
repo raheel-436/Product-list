@@ -46,14 +46,77 @@
       </section>
       <section class="cart-section">
         <h3>Your Cart (0)</h3>
-        <img
-          src="./assets/illustration-empty-cart.svg"
-          alt=""
-          draggable="false"
-        />
-        <p class="add-items-msg">Your added items will appear here</p>
+        <div class="items-container">
+          <!-- <img
+            src="./assets/illustration-empty-cart.svg"
+            alt=""
+            draggable="false"
+          />
+          <p class="add-items-msg">Your added items will appear here</p> -->
+          <div class="item">
+            <div class="item-info">
+              <p class="name text-semibold">Classic Tiramisu</p>
+              <div class="item-price">
+                <span class="text-semibold">1x</span>
+                <span>@ $5.50</span>
+                <span class="text-semibold">$5.50</span>
+              </div>
+            </div>
+            <div class="remove-item">
+              <img src="./assets/icon-remove-item.svg" alt="" />
+            </div>
+          </div>
+          <div class="grand-total">
+            <span>Order Total</span>
+            <h2>$ 45.50</h2>
+          </div>
+          <div class="cart-message">
+            <div class="message-img">
+              <img src="./assets/icon-carbon-neutral.svg" alt="" />
+            </div>
+            <p>
+              This is a
+              <span class="text-semibold">carbon-netural</span> delivery
+            </p>
+          </div>
+          <button class="confirm-btn text-semibold">Confirm</button>
+        </div>
       </section>
     </main>
+    <!-- Confirmed Order -->
+    <div class="confirmed-order-container">
+      <div class="card">
+        <div class="card-header">
+          <div class="confirmed-img">
+            <img src="./assets/icon-order-confirmed.svg" alt="" />
+          </div>
+          <h1>Order Confirmed</h1>
+          <p>We hope you enjoy your food</p>
+        </div>
+        <div class="card-body">
+          <div class="card-item">
+            <div class="card-item-img">
+              <img src="./assets/image-cake-thumbnail.jpg" alt="" />
+            </div>
+            <div class="card-item-info">
+              <p class="name text-semibold">Classic Tiramisu</p>
+              <div class="card-item-price">
+                <span class="text-semibold">1x</span>
+                <span>@ $5.50</span>
+              </div>
+            </div>
+            <span class="text-semibold">$5.50</span>
+          </div>
+          <div class="grand-total">
+            <span>Order Total</span>
+            <h2>$ 45.50</h2>
+          </div>
+        </div>
+        <button id="new-orderBtn" class="confirm-btn text-semibold">
+          Start New Order
+        </button>
+      </div>
+    </div>
     <script src="./scripts/data.json"></script>
     <script src="./scripts/main.js"></script>
   </body>
