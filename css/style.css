@@ -26,6 +26,7 @@
   --product-name-font: 1rem;
 
   --container-width-lg: 80%;
+  --container-width-md: 90%;
   --container-width-sm: 94%;
   --transition: all 300ms ease;
 }
@@ -346,4 +347,74 @@ main {
 
 .card-body .card-item:last-child {
   margin-bottom: 1rem;
+}
+
+/* Responsiveness for tablets */
+
+@media screen and (max-width: 600px) {
+  main {
+    padding: 3rem 0;
+  }
+
+  .main-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .product-card button {
+    position: relative;
+    top: -1rem;
+    left: 10rem;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+/* Responsiveness for small phones */
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .main-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .product-card button {
+    position: relative;
+    top: -1rem;
+    left: 5.5rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card-item-info .name {
+    font-size: 0.9rem;
+  }
+
+  .card-item-img {
+    margin-right: 0.5rem;
+  }
+
+  .card-body {
+    padding: 0.7rem 1rem;
+  }
 }
