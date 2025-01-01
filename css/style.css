@@ -259,7 +259,9 @@ main {
   z-index: 12;
   display: grid;
   place-items: center;
-  /* display: none; */
+  display: none;
+  overflow-y: auto;
+  padding: 1rem 0;
 }
 
 .card {
